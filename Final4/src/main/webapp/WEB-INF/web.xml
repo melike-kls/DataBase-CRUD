@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Final4</display-name>
+   
+   <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+		<servlet-name>ekle</servlet-name>
+		<servlet-class>Depo.Ekle</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ekle</servlet-name>
+		<url-pattern>/ekle.mlk</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>listele</servlet-name>
+		<servlet-class>Depo.Listele</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>listele</servlet-name>
+		<url-pattern>/listele.mlk</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>sil</servlet-name>
+		<servlet-class>Depo.Sil</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>sil</servlet-name>
+		<url-pattern>/sil.mlk</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>guncelle</servlet-name>
+		<servlet-class>Depo.Guncelle</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>guncelle</servlet-name>
+		<url-pattern>/guncelle.mlk</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
